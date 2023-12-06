@@ -1,5 +1,5 @@
 // Add click event listeners to each project image
-const projectImages = document.querySelectorAll(".projectsGrid img");
+const projectImages = document.querySelectorAll(".projects img");
 projectImages.forEach(function (image, index) {
   image.addEventListener("click", function (event) {
     // Prevent the default anchor behavior

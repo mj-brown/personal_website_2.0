@@ -7,6 +7,7 @@ body, p, a, ul, li {
 
 li {
     list-style-type: none;
+    margin: 5px 20px 5px 20px;
 }
 
 /* base styles */
@@ -19,18 +20,42 @@ body {
 
 .button {
     background: none;
-    border: 2px solid black;
+    border: 5px solid rgb(4,36,1);
     padding: 6px 12px;
     border-radius: 20px;
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
     display: inline-block;
     color: rgb(4,36,1);
+    font-weight: bolder;
 }
 
 .button:hover {
     color: rgb(158,189,219);
     background: rgb(4,36,1);
+}
+
+.navBtn {
+    background: none;
+    border: 4px solid rgb(4,36,1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    color: rgb(4,36,1);
+    font-weight: bolder;
+    margin: 10px 20px 10px 20px;
+}
+
+.navBtn:hover {
+    color: rgb(158,189,219);
+    background: rgb(4,36,1);
+}
+
+a:hover {
+    color: rgb(158,189,219);
+    font-weight: bolder;
 }
 
 input, textarea {
@@ -56,8 +81,9 @@ p, a ,li {
 }
 
 h1 {
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: bolder;
+    margin: 20px;
 }
 
 h2 {
@@ -79,6 +105,10 @@ h4 {
 }
 
 /* mobile styles */
+h3, h4 {
+    text-align: center;
+}
+
 nav {
    text-align: center; 
 }
@@ -97,13 +127,20 @@ li {
 
 #welcomeHeader {
     text-align: left;
+    margin: 20px;
+}
+
+.leading {
+    margin: 20px;   
 }
 
 #profileImg {
-    width: 300px;
+    width: 240px;
     height: auto;
-    border: 1px solid rgb(4,36,1);
+    border: 10px solid rgb(4,36,1);
     padding: 20px;
+    margin: 20px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 footer {
@@ -112,20 +149,37 @@ footer {
     font-size: 0.7em;
     width: 100vw;
     justify-content: space-evenly;
+    align-content: center;
+    padding: 15px;
 }
 
 .copyright {
     width: 180px;
-    border: 1px solid black;
 }
 
-.social {
+#footerImg {
     width: 30px;
-    border: 1px solid black;
+    padding: 25px;
 }
 
-.social img {
-    color: rgb(4,36,1);
+p {
+    margin: 30px 20px 30px 20px;
+}
+
+.skillCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skillCard {
+    width: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.skillImg {
+    width: 100px;
 }
 /* small tablet styles */
 @media screen and (min-width: 620px) {
@@ -169,12 +223,27 @@ footer {
 }
 
 /* Grid Testing */
-.projectsGrid {
+.projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
-.projectsGrid img {
+.projectContainer {
+    margin: 10px;
+}
+
+.projects h4 {
+    border: 3px solid rgb(4,36,1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+.projects img {
     width: 300px;
     height: auto;
+    border: 3px solid rgb(4,36,1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
