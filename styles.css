@@ -1,13 +1,180 @@
-/* variables */
+/* reset */
+body, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
 
-
-/* rest */
-
+li {
+    list-style-type: none;
+}
 
 /* base styles */
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(158,189,219);
+}
 
+.button {
+    background: none;
+    border: 2px solid black;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    color: rgb(4,36,1);
+}
+
+.button:hover {
+    color: rgb(158,189,219);
+    background: rgb(4,36,1);
+}
+
+input, textarea {
+    background: rgba (255, 255, 255, 0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid rgb(4,36,1);
+    color: rgb(4,36,1);
+}
 
 /* fonts */
+h1, h2, h3, h4, p, li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, sans-serif;
+}
 
+h1, h2, h3, h4 {
+    color: rgb(4,36,1);
+    font-weight: normal;
+}
+
+p, a ,li {
+    color: rgb(4,36,1);
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+.leading {
+    font-size: 1.1em;
+}
 
 /* mobile styles */
+nav {
+   text-align: center; 
+}
+
+li {
+    display: inline-block;
+}
+
+#welcome {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcomeHeader {
+    text-align: left;
+}
+
+#profileImg {
+    width: 300px;
+    height: auto;
+    border: 1px solid rgb(4,36,1);
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.7em;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.copyright {
+    width: 180px;
+    border: 1px solid black;
+}
+
+.social {
+    width: 30px;
+    border: 1px solid black;
+}
+
+.social img {
+    color: rgb(4,36,1);
+}
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* large tablet and laptops styles */
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 30px;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup h3 {
+    margin-top: 0;
+}
+
+.popup button {
+    cursor: pointer;
+}
+
+/* Grid Testing */
+.projectsGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectsGrid img {
+    width: 300px;
+    height: auto;
+}
