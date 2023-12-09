@@ -1,385 +1,407 @@
 /* reset */
-body, p, a, ul, li {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 li {
-    list-style-type: none;
-    margin: 5px 20px 5px 20px;
+  list-style-type: none;
+  margin: 5px 20px 5px 20px;
 }
 
 /* base styles */
 body {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    background-color: rgb(158,189,219);
+  background-color: rgb(158, 189, 219);
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .button {
-    background: none;
-    border: 5px solid rgb(4,36,1);
-    padding: 6px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-    display: inline-block;
-    color: rgb(4,36,1);
-    font-weight: bolder;
+  background: none;
+  border-radius: 20px;
+  border: 5px solid rgb(4, 36, 1);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  color: rgb(4, 36, 1);
+  display: inline-block;
+  font-weight: bolder;
+  padding: 6px 12px;
+  text-transform: uppercase;
 }
 
 .button:hover {
-    color: rgb(158,189,219);
-    background: rgb(4,36,1);
+  background: rgb(4, 36, 1);
+  color: rgb(158, 189, 219);
 }
 
 .navBtn {
-    background: none;
-    border: 4px solid rgb(4,36,1);
-    padding: 6px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-    display: inline-block;
-    color: rgb(4,36,1);
-    font-weight: bolder;
-    margin: 10px 20px 10px 20px;
+  background: none;
+  border-radius: 20px;
+  border: 4px solid rgb(4, 36, 1);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  color: rgb(4, 36, 1);
+  display: inline-block;
+  font-weight: bolder;
+  margin: 10px 20px 10px 20px;
+  padding: 6px 12px;
+  text-transform: uppercase;
 }
 
 .navBtn:hover {
-    color: rgb(158,189,219);
-    background: rgb(4,36,1);
+  background: rgb(4, 36, 1);
+  color: rgb(158, 189, 219);
 }
 
 a:hover {
-    color: rgb(158,189,219);
-    font-weight: bolder;
+  color: rgb(158, 189, 219);
+  font-weight: bolder;
 }
 
-input, textarea {
-    background: rgba (247, 244, 235, 0.05);
-    padding: 10px 16px;
-    border-radius: 20px;
-    border: 2px solid rgb(4,36,1);
-    color: rgb(4,36,1);
+input,
+textarea {
+  background: rgba (247, 244, 235, 0.05);
+  border-radius: 20px;
+  border: 2px solid rgb(4, 36, 1);
+  color: rgb(4, 36, 1);
+  padding: 10px 16px;
 }
 
 /* fonts */
-h1, h2, h3, h4, p, li {
-    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, sans-serif;
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, sans-serif;
 }
 
-h1, h2, h3, h4 {
-    color: rgb(4,36,1);
-    font-weight: normal;
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(4, 36, 1);
+  font-weight: normal;
 }
 
-p, a ,li {
-    color: rgb(4,36,1);
+p,
+a,
+li {
+  color: rgb(4, 36, 1);
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: bolder;
-    margin: 20px;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 20px;
 }
 
 h2 {
-    font-size: 1.6em;
-    font-weight: bold;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
 h3 {
-    font-size: 1.2em;
-    font-weight: bolder;
+  font-size: 1.2em;
+  font-weight: bolder;
 }
 
 h4 {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .leading {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .popup button {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /* mobile styles */
-h3, h4 {
-    text-align: center;
+h3,
+h4 {
+  text-align: center;
 }
 
 nav {
-   text-align: center; 
+  text-align: center;
 }
 
 li {
-    display: inline-block;
+  display: inline-block;
 }
 
 #welcome {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 #welcomeHeader {
-    text-align: left;
-    margin: 20px;
+  margin: 20px;
+  text-align: left;
 }
 
 .leading {
-    margin: 20px;   
+  margin: 20px;
 }
 
 #profileImg {
-    width: 240px;
-    height: auto;
-    border: 10px solid rgb(4,36,1);
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  border: 10px solid rgb(4, 36, 1);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  width: 240px;
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.7em;
-    width: 100vw;
-    justify-content: space-evenly;
-    align-content: center;
-    padding: 15px;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  justify-content: space-evenly;
+  padding: 15px;
+  width: 100vw;
 }
 
 .copyright {
-    width: 180px;
+  width: 180px;
 }
 
 #footerImg {
-    width: 30px;
-    padding: 25px;
+  padding: 25px;
+  width: 30px;
 }
 
 p {
-    margin: 30px 20px 30px 20px;
+  margin: 30px 20px 30px 20px;
 }
 
 .skillCardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .skillCard {
-    width: 100px;
-    text-align: center;
-    margin: 20px;
+  margin: 20px;
+  text-align: center;
+  width: 100px;
 }
 
 .skillImg {
-    width: 100px;
+  width: 100px;
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projectContainer {
-    margin: 10px;
+  margin: 10px;
 }
 
 .projects h4 {
-    border: 3px solid rgb(4,36,1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 4px;
-    margin-bottom: 5px;
+  border: 3px solid rgb(4, 36, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  padding: 4px;
 }
 
 .projects img {
-    width: 300px;
-    height: auto;
-    border: 3px solid rgb(4,36,1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgb(4, 36, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: auto;
+  width: 300px;
 }
 
 .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(158,189,219);
-    padding: 10px 5px 10px 5px;
-    border: 10px solid rgb(4,36,1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    width: 200px;
+  background: rgb(158, 189, 219);
+  border: 10px solid rgb(4, 36, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  left: 50%;
+  padding: 10px 5px 10px 5px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  z-index: 1;
 }
 
 .popup h4 {
-    margin-top: 0;
-    color: rgb(158,189,219);
-    border: 3px solid rgb(4,36,1);
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-color: rgb(4,36,1);
-    font-weight: bolder;
+  background-color: rgb(4, 36, 1);
+  border-radius: 20px;
+  border: 3px solid rgb(4, 36, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: rgb(158, 189, 219);
+  font-weight: bolder;
+  margin-top: 0;
+  padding: 10px;
 }
 
 .popup p {
-    color: rgb(4,36,1);
-    font-weight: bold;
+  color: rgb(4, 36, 1);
+  font-weight: bold;
 }
 
 .popup button {
-    cursor: pointer;
-    width: 175px;
-    margin-left: 10px;
-    padding: 10px;
-    border: 3px solid rgb(4,36,1);
-    color: rgb(158,189,219);
-    background-color: rgb(4,36,1);
-    font-weight: bolder;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(4, 36, 1);
+  border-radius: 20px;
+  border: 3px solid rgb(4, 36, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: rgb(158, 189, 219);
+  cursor: pointer;
+  font-weight: bolder;
+  margin-left: 10px;
+  padding: 10px;
+  width: 175px;
 }
 
 #contact {
-    text-align: center;
+  text-align: center;
 }
 
 form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    height: 400px;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: center;
 }
 
 input {
-    width: 275px;
-    margin: 10px 20px 10px 20px;
+  margin: 10px 20px 10px 20px;
+  width: 275px;
 }
 
 textarea {
-    width: 275px;
-    height: 100px;
-    margin: 10px 20px 20px 20px;
+  height: 100px;
+  margin: 10px 20px 20px 20px;
+  width: 275px;
 }
-
-
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-    body {
-        font-size: 18px;
-    }
+  body {
+    font-size: 18px;
+  }
 
-    h3 {
-        font-size: 30px;
-    }
+  h3 {
+    font-size: 30px;
+  }
 
-    .navBtn {
-        padding: 15px;
-        font-size: 18px;
-        border-radius: 35px;
-        border: 6px solid rgb(4,36,1);
-        font-weight: bold;
-    }
+  .navBtn {
+    border-radius: 35px;
+    border: 6px solid rgb(4, 36, 1);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+  }
 
-    #welcomeText {
-        width: 100vw;
-        padding: 20px;
-    }
+  #welcomeText {
+    padding: 20px;
+    width: 100vw;
+  }
 
-    #profileImg {
-        width: 400px;
-        height: auto;
-    }
+  #profileImg {
+    height: auto;
+    width: 400px;
+  }
 
-    #quote {
-        padding-top: 200px;
-    }
+  #quote {
+    padding-top: 200px;
+  }
 
-    .button {
-        font-size: 20px;
-        padding: 20px;
-        font-weight: bolder;
-        border-radius: 35px;
-        border: 6px solid rgb(4,36,1);
-    }
+  .button {
+    border-radius: 35px;
+    border: 6px solid rgb(4, 36, 1);
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+  }
 
-    .copyright {
-        width: 400px;
-        font-size: 20px;
-    }
+  .copyright {
+    font-size: 20px;
+    width: 400px;
+  }
 
-    #footerImg {
-        width: 45px;
-    }
+  #footerImg {
+    width: 45px;
+  }
 
-    .projects {
-        justify-content: space-evenly;
-    }
+  .projects {
+    justify-content: space-evenly;
+  }
 
-    .projects h4 {
-        margin-bottom: 20px;
-        padding: 10px;
-        font-size: 22px;
-    }
+  .projects h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 
-    .popup {
-        width: 500px;
-        padding: 20px;
-    }
+  .popup {
+    padding: 20px;
+    width: 500px;
+  }
 
-    .popup h4 {
-        font-size: 30px;
-        border-radius: 35px;
-    }
+  .popup h4 {
+    border-radius: 35px;
+    font-size: 30px;
+  }
 
-    .popup p {
-        font-size: 25px;
-    }
+  .popup p {
+    font-size: 25px;
+  }
 
-    .popup button {
-        font-size: 30px;
-        border-radius: 35px;
-    }
+  .popup button {
+    border-radius: 35px;
+    font-size: 30px;
+  }
 
-    form {
-        flex-direction: column;
-        height: 700px;
-    }
+  form {
+    flex-direction: column;
+    height: 700px;
+  }
 
-    input {
-        width: 351px;
-    }
+  input {
+    width: 351px;
+  }
 
-    textarea {
-        width: 351px;
-    }
+  textarea {
+    width: 351px;
+  }
 }
 
 /* large tablet and laptops styles */
 @media screen and (min-width: 960px) {
-    body {
-        font-size: 24px;
-    }
+  body {
+    font-size: 24px;
+  }
+
+  form {
+    height: 400px;
+  }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
-    body {
-        font-size: 30px;
-    }
+  body {
+    font-size: 30px;
+  }
+
+  form {
+    height: 400px;
+  }
 }
