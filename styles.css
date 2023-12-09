@@ -59,7 +59,7 @@ a:hover {
 }
 
 input, textarea {
-    background: rgba (255, 255, 255, 0.05);
+    background: rgba (247, 244, 235, 0.05);
     padding: 10px 16px;
     border-radius: 20px;
     border: 2px solid rgb(4,36,1);
@@ -102,6 +102,10 @@ h4 {
 
 .leading {
     font-size: 1.1em;
+}
+
+.popup button {
+    font-size: 1.2em;
 }
 
 /* mobile styles */
@@ -181,48 +185,7 @@ p {
 .skillImg {
     width: 100px;
 }
-/* small tablet styles */
-@media screen and (min-width: 620px) {
-    body {
-        font-size: 18px;
-    }
-}
 
-/* large tablet and laptops styles */
-@media screen and (min-width: 960px) {
-    body {
-        font-size: 24px;
-    }
-}
-
-/* desktop styles */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 30px;
-    }
-}
-
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border: 2px solid #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.popup h3 {
-    margin-top: 0;
-}
-
-.popup button {
-    cursor: pointer;
-}
-
-/* Grid Testing */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -246,4 +209,177 @@ p {
     height: auto;
     border: 3px solid rgb(4,36,1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(158,189,219);
+    padding: 10px 5px 10px 5px;
+    border: 10px solid rgb(4,36,1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    width: 200px;
+}
+
+.popup h4 {
+    margin-top: 0;
+    color: rgb(158,189,219);
+    border: 3px solid rgb(4,36,1);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(4,36,1);
+    font-weight: bolder;
+}
+
+.popup p {
+    color: rgb(4,36,1);
+    font-weight: bold;
+}
+
+.popup button {
+    cursor: pointer;
+    width: 175px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 3px solid rgb(4,36,1);
+    color: rgb(158,189,219);
+    background-color: rgb(4,36,1);
+    font-weight: bolder;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#contact {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 400px;
+}
+
+input {
+    width: 275px;
+    margin: 10px 20px 10px 20px;
+}
+
+textarea {
+    width: 275px;
+    height: 100px;
+    margin: 10px 20px 20px 20px;
+}
+
+
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+    body {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .navBtn {
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 35px;
+        border: 6px solid rgb(4,36,1);
+        font-weight: bold;
+    }
+
+    #welcomeText {
+        width: 100vw;
+        padding: 20px;
+    }
+
+    #profileImg {
+        width: 400px;
+        height: auto;
+    }
+
+    #quote {
+        padding-top: 200px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 20px;
+        font-weight: bolder;
+        border-radius: 35px;
+        border: 6px solid rgb(4,36,1);
+    }
+
+    .copyright {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    #footerImg {
+        width: 45px;
+    }
+
+    .projects {
+        justify-content: space-evenly;
+    }
+
+    .projects h4 {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 22px;
+    }
+
+    .popup {
+        width: 500px;
+        padding: 20px;
+    }
+
+    .popup h4 {
+        font-size: 30px;
+        border-radius: 35px;
+    }
+
+    .popup p {
+        font-size: 25px;
+    }
+
+    .popup button {
+        font-size: 30px;
+        border-radius: 35px;
+    }
+
+    form {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    input {
+        width: 351px;
+    }
+
+    textarea {
+        width: 351px;
+    }
+}
+
+/* large tablet and laptops styles */
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 30px;
+    }
 }

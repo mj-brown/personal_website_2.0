@@ -17,10 +17,9 @@ const getDescriptionByIndex = (index) => {
   // This function should return the description based on the image index
   // You can customize this function based on your needs
   const descriptions = [
-    "Description for Mixed Messages.",
-    "Description for Plumeria Lab Services.",
-    "Description for Kalihi Boogie Board Club.",
-    // Add more descriptions as needed
+    "The Mixed Messages page is a random fortune teller.  The user follows the prompt and then clicks the 'Fates' button.  Once the button is clicked the message generator will provide a random message.",
+    "The Plumeria Lab Services page is a web page for a mobile phlebotomy company.  It lists out the services and what a potential patient must do to be able to get the highest quality service available..",
+    "The Kalihi Boogie Board Club page is a landing site for a fiction club. It lists out when and where the club meets up and what their interests are.",
   ];
 
   return descriptions[index] || "No description available.";
