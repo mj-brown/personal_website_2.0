@@ -393,6 +393,11 @@ textarea {
   form {
     height: 400px;
   }
+
+  .projects img {
+    height: auto;
+    width: 500px;
+  }
 }
 
 /* desktop styles */

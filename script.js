@@ -17,9 +17,9 @@ const getDescriptionByIndex = (index) => {
   // This function should return the description based on the image index
   // You can customize this function based on your needs
   const descriptions = [
-    "The Mixed Messages page is a random fortune teller.  The user follows the prompt and then clicks the 'Fates' button.  Once the button is clicked the message generator will provide a random message.",
-    "The Plumeria Lab Services page is a web page for a mobile phlebotomy company.  It lists out the services and what a potential patient must do to be able to get the highest quality service available..",
-    "The Kalihi Boogie Board Club page is a landing site for a fiction club. It lists out when and where the club meets up and what their interests are.",
+    "The Pau Hana Diner Dashboard page is a KPI dashboard that I developed for a fictional restaruant.  It shows the user sales and revenue generated, listing out transactions, and how much traffic they have recieved.  It also has a functional sidebar.",
+    "The Book Buddy page is a web page that is developed using React and MUI for a fictional library for web based reservation and checkout of books.",
+    "The Book It travel app is developed to use the amadeus api for travels to create personalized travel packages to their destination of choice.",
   ];
 
   return descriptions[index] || "No description available.";
